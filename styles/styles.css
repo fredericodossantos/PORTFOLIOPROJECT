@@ -18,6 +18,7 @@
   --color-grey-5: #2a3e35;
   --color-grey-6: #12181b;
   --br-sm-2: 14px;
+  --box-shadow-1: 0 3px 15 px rgba(0,0,0,.3);
 }
 
 body {
@@ -51,7 +52,7 @@ section {
 }
 
 .section {
-  transform: translate(-100%) scale(0);
+  transform: translateY(-100%) scale(0);
   transition: all 0.4s ease-in-out;
   background-color: var(--color-primary);
 }
@@ -81,7 +82,7 @@ section {
   transform: translateY(0) scale(1);
 }
 
-.controls {
+.controlls {
   position: fixed;
   z-index: 10;
   top: 50%;
@@ -92,7 +93,7 @@ section {
   justify-content: center;
   transform: translateY(-50%);
 }
-.controls .control {
+.controlls .control {
   padding: 1rem;
   cursor: pointer;
   background-color: var(--color-grey-4);
@@ -102,4 +103,11 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0.7rem 0;
+  box-shadow: var(--box-shadow-1);
+}
+.controlls .control i {
+  font-size: 1.2rem;
+  color: var(--color-grey-2);
+  pointer-events: none;
 }/*# sourceMappingURL=styles.css.map */

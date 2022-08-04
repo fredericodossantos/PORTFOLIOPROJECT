@@ -51,7 +51,7 @@ section{
     padding: 3rem 18rem;
 }
 .section{
-    transform: translate(-100%) scale(0);
+    transform: translateY(-100%) scale(0); //different here
     transition: all .4s ease-in-out;
     background-color: var(--color-primary);
 }
